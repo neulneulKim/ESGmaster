@@ -28,12 +28,10 @@ add_page_title()
 show_pages(
     [
         Page("Home.py", "Home", "🏠"),
-        Page("pages/설문조사.py", "설문조사 페이지", "📊"),
+        Page("pages/설문조사.py", "설문조사 페이지", "📋"),
         Page("pages/성향에 따른 ESG 기업 추천.py", "성향에 따른 ESG 기업 추천", "📊"),
         Page("pages/섹터별 ESG 기업 추천.py", "섹터별 ESG 기업 추천", "🏢"),
-        Page("pages/기업 상세 정보 페이지.py", "기업 상세 정보 페이지", "📈"),
-        Page("pages/시각장애인용 정보 페이지.py", "시각장애인용 정보 페이지", "📈"),
-        Page("pages/테스트.py", "테스트 페이지", "📈")
+        Page("pages/기업 상세 정보 페이지.py", "기업 상세 정보 페이지", "📈")
     ]
 )
 
