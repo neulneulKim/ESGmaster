@@ -14,49 +14,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import base64
 from fuzzywuzzy import process
-import pyttsx3
-import speech_recognition as sr
 
-
-def read_text(text):
-    # pyttsx3 초기화
-    engine = pyttsx3.init()
-
-    # Set properties (optional)
-    engine.setProperty('rate', 150)
-    engine.say(text)
-    
-    # 대기(말하기가 끝날 때까지)
-    engine.runAndWait()
-
-# 예제 텍스트
-text_to_read = "시각장애인용 페이지로 이동하시겠습니까?원하시면 일번, 원하지 않으시면 이번 이라고 말씀해주세요"
-# 텍스트 읽기 함수 호출
-read_text(text_to_read)
-
-# 음성 인식기 생성
-recognizer = sr.Recognizer()
-
-# 마이크로 음성 듣기
-with sr.Microphone() as source:
-    print("답변을 기다리고 있습니다...")
-    audio = recognizer.listen(source)
-
-# 음성 인식 및 페이지 전환
-try:
-    # 음성 인식
-    response = recognizer.recognize_google(audio, language='ko-KR')
-    print(f"사용자: {response}")
-    
-    if "1번" in response:
-        switch_page("시각장애인용 정보 페이지")
-    elif "2번" in response:
-        print("현재 페이지에 머무릅니다.")
-    else:
-        print("알 수 없는 응답입니다.")
-        
-except sr.UnknownValueError:
-    print("음성을 이해하지 못했습니다.")
         
 # 초기 세션 상태 설정
 def initialize_session_state():
