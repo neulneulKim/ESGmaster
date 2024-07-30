@@ -1,0 +1,11 @@
+streamlit==1.36.0
+numpy
+pandas
+pykrx
+streamlit_extras
+st-pages
+plotly
+yfinance
+matplotlib
+finance-datareader
+fuzzywuzzy
