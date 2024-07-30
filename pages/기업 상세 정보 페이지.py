@@ -145,7 +145,7 @@ def main():
                     '<div style="padding: 7px; background-color: #3DB7CC; border-radius: 0px; '
                     'text-align: center; width: 350px; margin-left: 100px; margin: 0 auto;">'
                         '<div style="border: 3px solid #FFFFFF; padding: 0px;">'
-                            f'<h1 style="margin-top: 0px; font-size: 40px; color: #FFFFFF; margin-left: 10px;">{grade}</h1>'
+                            f'<h1 style="margin-top: 0px; font-size: 35px; color: #FFFFFF; margin-left: 10px;">{grade}</h1>'
                         '</div>'
                     '</div>',
                     unsafe_allow_html=True
