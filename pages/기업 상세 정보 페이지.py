@@ -138,7 +138,7 @@ def main():
             if not filtered_df_2023.empty:
                 grade = filtered_df_2023.iloc[0]['종합등급']
                 st.markdown(
-                f'<h3 style="margin-bottom: 5px; margin-right: -50px; color: #008100; text-align: center;">"{company_name}"의 2024년 ESG등급 예측!!</h3>',
+                f'<h3 style="margin-bottom: 5px; margin-right: -100px; color: #008100; text-align: center;">"{company_name}"의 2024년 ESG등급 예측!!</h3>',
                 unsafe_allow_html=True)
 
                 st.markdown(
