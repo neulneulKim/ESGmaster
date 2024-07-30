@@ -172,7 +172,7 @@ def main():
                 if ticker:
                     # 시작 날짜와 종료 날짜 입력 받기
                     start_date = st.sidebar.date_input("시작 날짜: ", value=pd.to_datetime("2023-07-01"))
-                    end_date = st.sidebar.date_input("종료 날짜: ", value=pd.to_datetime("2024-07-09"))
+                    end_date = st.sidebar.date_input("종료 날짜: ", value=pd.to_datetime("2024-07-31"))
 
                     # 데이터 가져오기
                     data = get_stock_data(ticker, start_date, end_date)
